@@ -23,6 +23,18 @@
     <div id="add-ball">Add Ball</div>
     <script>
         const canvas = document.getElementById('gameCanvas');
+        const ctx  = canvas.getContext('2d'); //createCircle,createRectangle, createTriangle, createLine
+        const DECIMAL_MULTIPLIER = 10000;
+        const WIDTH = 800;
+        const HEIGHT = 800;
+        const ballRadius = 7;
+        const obstacleRadius = 4;
+        const gravity  = pad(0.2);
+        const horizontalFriction = 0.4;
+        const verticalFriction = 0.8;
+        let balls = [];
+        const obstacles = [];
+        const sinks = [];
     </script>
 </body>
 </html>
